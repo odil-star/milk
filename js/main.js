@@ -74,3 +74,13 @@ burger.addEventListener('click', () => {
     menu.classList.toggle('active')
     console.log('click')
 })
+window.addEventListener('click', (e) => {
+    if (
+        !menu.contains(e.target) &&
+        !burger.contains(e.target)
+    ) {
+        burger.classList.remove('active');
+        menu.classList.remove('active');
+        document.body.classList.remove('lock');
+    }
+});
