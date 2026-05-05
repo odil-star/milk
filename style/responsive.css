@@ -362,7 +362,7 @@
     }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 576px) {
     .container {
         max-width: 550px;
         margin: 0 auto;
